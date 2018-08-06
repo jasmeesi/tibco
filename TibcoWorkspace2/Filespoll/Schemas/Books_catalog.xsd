@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Books_catalog" xmlns:tns="http://www.example.org/Books_catalog" elementFormDefault="qualified">
+
+
+
+    <complexType name="Root">
+    	<sequence>
+    		<element name="TITLE" type="string"></element>
+    		<element name="AUTHOR" type="string"></element>
+    		<element name="YEAR" type="string"></element>
+    		<element name="ISBN" type="string"></element>
+    		<element name="PUBLISHER" type="string"></element>
+    		<element name="GENRE" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="BOOKS_CATALOG" type="tns:Root"></element>
+</schema>
